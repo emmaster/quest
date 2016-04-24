@@ -1,10 +1,10 @@
 current_path = File.dirname(__FILE__)
-require current_path + "/file_printer.rb"
+require_relative "file_printer.rb"
 printer = FilePrinter.new
 
 
 puts time = Time.now.hour
-printer.print_file(current_path+"/data_for_14-5/1.txt")
+printer.print_file(current_path+"/data/1.txt")
 
 a = gets.chomp
 
